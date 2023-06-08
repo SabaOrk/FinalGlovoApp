@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "698322687638",
+    "firebase_url": "https://recyclerviewapplicationso-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "recyclerviewapplicationso",
+    "storage_bucket": "recyclerviewapplicationso.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:698322687638:android:18fc2ef05d9f1f623914b7",
+        "android_client_info": {
+          "package_name": "com.example.recyclerviewapplicationsabaorkoshneli"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "698322687638-vifvhl5bf82754hn1f6r0nr7cllilsi7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC47rvMlv5TEpl5sl96fvP3dFSkAoEvYiQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "698322687638-vifvhl5bf82754hn1f6r0nr7cllilsi7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
