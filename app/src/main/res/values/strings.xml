@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">RecyclerViewApplication1</string>
+    <string name="map_content_description">Map View</string>
 </resources>

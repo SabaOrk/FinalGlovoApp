@@ -41,6 +41,7 @@ class FoodActivity : AppCompatActivity() {
     private fun listeners() {
         orderBtn.setOnClickListener {
             Toast.makeText(this, "you have successifully placed an order, please wait until it gets delivered!", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(this, OrderActivity::class.java))
         }
 
         backBtn.setOnClickListener {
