@@ -27,20 +27,20 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun getData(): MutableList<Email> {
-        val dataList = ArrayList<Email>()
+    private fun getData(): MutableList<Food> {
+        val dataList = ArrayList<Food>()
         // Replace the code for manual data with Firebase Database retrieval logic
         // For example, you can fetch the data from a "emails" node in the database:
         val database = FirebaseDatabase.getInstance()
-        val emailsRef = database.getReference("emails")
+        val emailsRef = database.getReference("foods")
         emailsRef.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(dataSnapshot: DataSnapshot) {
-                for (emailSnapshot in dataSnapshot.children) {
-                    val author = emailSnapshot.child("author").getValue(String::class.java)
-                    val subject = emailSnapshot.child("subject").getValue(String::class.java)
-                    val content = emailSnapshot.child("content").getValue(String::class.java)
-                    if (author != null && subject != null && content != null) {
-                        dataList.add(Email(author, subject, content))
+                for (foodSnapshot in dataSnapshot.children) {
+                    val name = foodSnapshot.child("name").getValue(String::class.java)
+                    val price = foodSnapshot.child("price").getValue(String::class.java)
+                    val photo = foodSnapshot.child("photo").getValue(String::class.java)
+                    if (name != null && price != null) {
+                        dataList.add(Food(name, price, photo))
                     }
                 }
                 homeRVAdapter.notifyDataSetChanged()

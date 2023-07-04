@@ -21,7 +21,7 @@
             tools:srcCompat="@tools:sample/avatars" />
 
         <TextView
-            android:id="@+id/emailAuthorTV"
+            android:id="@+id/nameTV"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="TextView"
@@ -30,23 +30,14 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/emailSubjectTV"
+            android:id="@+id/priceTV"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="TextView"
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/imageView"
-            app:layout_constraintTop_toBottomOf="@+id/emailAuthorTV" />
+            app:layout_constraintTop_toBottomOf="@+id/nameTV" />
 
-        <TextView
-            android:id="@+id/emailContentTV"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:text="TextView"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/imageView"
-            app:layout_constraintTop_toBottomOf="@+id/emailSubjectTV" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>
